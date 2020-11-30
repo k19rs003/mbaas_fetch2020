@@ -47,9 +47,9 @@
       .then(function(results){
         var msg = "";
         for(var i = 0; i < results.length; i++) {
-           var data = results[i].get("text");
-           var update = results[i].get("updateDate");
-           msg += data + ":" + update + "<br>";
+          var data = results[i].get("text");
+          var update = results[i].get("updateDate");
+          msg += data + ":" + update + "<br>";
         }
         $("#message").html(msg);
       })
@@ -69,4 +69,9 @@
   </div>
   <div id="message">message area</div>
 </body>
+<table>
+  <tr><th>message</th><th>Update Date</th></tr>
+  <tr><td>data</td><td>update</td></tr>
+  <tr><td>Hello</td><td>2018-11-12T05:09:29.166Z</td></tr>
+</table>
 </html>
